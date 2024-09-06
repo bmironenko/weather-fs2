@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="15">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT" immediateFlush="false">
+            <PatternLayout pattern="%d{ISO8601} | %-8p | %logger >> %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <!-- Root logger: default is WARNING -->
+        <Root level="info" includeLocation="false">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
